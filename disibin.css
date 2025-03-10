@@ -1,0 +1,305 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    height: 100vh;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    background-image: url(images/background1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+.navbar{
+    width: 100%;
+    height: 45px;
+    background-color: #fef6eccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    
+}
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    height: 100%;
+    margin: 20px;
+    gap: 30px;
+    
+}
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    color: #2ebdff;
+}
+.logo img{
+    width: 30px;
+    height: 30px;
+    object-fit: fill;
+    
+    
+}
+.navbar ul{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    
+}
+
+.navbar ul input{
+    
+    min-width: 50px;
+    max-width: 400px;
+    text-align: center;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.navbar ul a{
+    text-decoration: none;
+    color: #2ebdff;
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+.navbar ul li{
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    
+}
+.navbar ul li:hover{
+    background-color: #fff;
+    
+}
+.sidebar{
+    position: fixed;
+    top: 50px;
+    right: 0;
+    height: 100vh;
+    width: 150px;
+    z-index: 1000;
+    background-color: rgb(254, 246, 236);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+@media(max-width: 700px){
+    .hideonmobile{
+        display: none;
+    }
+}
+.content{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.login{
+    width: 300px;
+    height: 80vh;
+    border-radius: 10px;
+    border: none;
+    gap: 5px;
+    backdrop-filter: blur(30px);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fef6ec;
+    position: absolute;
+    z-index: 1000;
+
+}
+.login #cross{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.login p{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.login h1{
+    color: #2ebdff;
+    margin: 0;
+}
+.login a{
+    text-decoration: none;
+
+}
+.login div label{
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+.login .submit{
+    margin-top: 20px;
+    height: 25px;
+    width: 70px;
+    border-radius: 5px;
+    border: 1px solid tan;
+    background-color: #fff;
+    color: #2ebdff;
+    text-align: center;
+}
+.login .regi{
+    height: 25px;
+    color: #2ebdff;
+    cursor: pointer;
+
+}
+.login .userbox, .passbox{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.passbox input, .userbox input{
+    height: 25px;
+    width: 200px;
+    border-radius: 8px;
+    border: 1px solid tan;
+    outline: none;
+    text-align: center;
+    color: black;
+
+}
+.passbox input, .userbox input::placeholder{
+    text-align: center;
+}
+.regibox{
+    width: 300px;
+    height: 80vh;
+    border-radius: 10px;
+    border: none;
+    gap: 5px;
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fef6ec;
+    position: absolute;
+    z-index: 1000;
+}
+.regibox #regiboxcross{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.regibox h1{
+    color: #2ebdff;
+    margin: 0;
+}
+.regibox input{
+    height: 25px;
+    width: 200px;
+    border-radius: 8px;
+    border: 1px solid tan;
+    outline: none;
+    text-align: center;
+    color: black;
+}
+.regibox div{
+    display: flex;
+    flex-direction: column;
+}
+.regibox div label{
+    font-size: 12px;
+}
+.regibox button{
+    margin-top: 20px;
+    height: 25px;
+    width: 70px;
+    border-radius: 5px;
+    border: 1px solid tan;
+    background-color: #fff;
+    color: #2ebdff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.detailsbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    gap: 100px
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    gap: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.details .btn{
+    display: flex;
+    flex-direction: row;
+
+}
+.details .btn a{
+    color: white;
+    text-decoration: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: tan;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.details .btn a:hover{
+    background-color: #fef6eccc;
+    color: #2ebdff;
+}
+.imagecontainer img{
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    
+}
+.content h1{
+    color: #2ebdff;
+    font-size: 65px;
+}
